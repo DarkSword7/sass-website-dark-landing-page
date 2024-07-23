@@ -16,8 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overflow-x-hidden">
-      <body className={clsx(dmSans.className, "antialiased")}>{children}</body>
+    <html lang="en">
+      <meta name="viewport" />
+      <body className={clsx(dmSans.className, "antialiased")}>
+        <div className="overflow-x-hidden">{children}</div>
+      </body>
     </html>
   );
 }
