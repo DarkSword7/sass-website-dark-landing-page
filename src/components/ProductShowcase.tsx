@@ -11,7 +11,7 @@ export const ProductShowcase = () => {
     offset: ["start end", "end end"],
   });
 
-  const rotateX = useTransform(scrollYProgress, [0, 1], [20, 0]);
+  const rotateX = useTransform(scrollYProgress, [0, 1], [30, 0]);
   const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
   return (
     <div className="bg-black text-white bg-gradient-to-b from-black to-[#5D2CA8] py-[72px] sm:py-24 overflow-hidden">
